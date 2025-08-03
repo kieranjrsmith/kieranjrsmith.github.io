@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🔄 CMS: Switch to Local Mode",
+            "type": "shell",
+            "command": "./switch-cms-mode.sh",
+            "args": ["local"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "$(arrow-swap) Local",
+                    "tooltip": "Switch CMS to Local Development Mode",
+                    "color": "#00ff00"
+                }
+            }
+        },
+        {
+            "label": "🌐 CMS: Switch to Live Mode", 
+            "type": "shell",
+            "command": "./switch-cms-mode.sh",
+            "args": ["live"],
+            "group": {
+                "kind": "build", 
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "$(globe) Live",
+                    "tooltip": "Switch CMS to Live/Production Mode",
+                    "color": "#ff6600"
+                }
+            }
+        },
+        {
+            "label": "📊 CMS: Check Current Mode",
+            "type": "shell", 
+            "command": "./switch-cms-mode.sh",
+            "args": ["status"],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}

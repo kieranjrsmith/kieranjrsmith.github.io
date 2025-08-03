@@ -1,32 +1,14 @@
-# ============================================
-# DECAP CMS CONFIGURATION
-# ============================================
-# 
-# TO SWITCH BETWEEN LOCAL AND PRODUCTION:
-# 1. For LOCAL development: Uncomment the "proxy" backend below and comment out the "github" backend
-# 2. For PRODUCTION/LIVE: Uncomment the "github" backend below and comment out the "proxy" backend
-#
-# ============================================
-
-# PRODUCTION/LIVE VERSION (GitHub Pages) - CURRENTLY COMMENTED OUT
+# Local development configuration
 backend:
-  name: github
-  repo: kieranjrsmith/kieranjrsmith.github.io
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
   branch: main
-
-# LOCAL DEVELOPMENT VERSION - CURRENTLY ACTIVE
-backend:
-#   name: proxy
-#   proxy_url: http://localhost:8081/api/v1
-  branch: main
-# 
-# NOTE: For local development, also run: npx decap-server
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-media_folder: "assets/images" # Media files will be stored in the repo under assets/images
-public_folder: "/assets/images" # The src attribute for uploaded media will begin with /assets/images
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "config"

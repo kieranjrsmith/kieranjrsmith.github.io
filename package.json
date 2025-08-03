@@ -1,0 +1,21 @@
+{
+  "name": "kieranjrsmith-github-io",
+  "version": "1.0.0",
+  "description": "Jekyll site with Decap CMS",
+  "scripts": {
+    "cms:local": "echo 'Switching to LOCAL development mode...' && ./switch-cms-mode.sh local",
+    "cms:live": "echo 'Switching to LIVE production mode...' && ./switch-cms-mode.sh live",
+    "cms:status": "./switch-cms-mode.sh status",
+    "dev:cms": "npx decap-server",
+    "dev:jekyll": "bundle exec jekyll serve --livereload --host 0.0.0.0",
+    "dev": "echo 'Starting Jekyll server... Open another terminal and run: npm run dev:cms' && npm run dev:jekyll",
+    "commit:safe": "npm run cms:live && git add admin/config.yml && git commit",
+    "commit:and-back": "npm run cms:live && git add admin/config.yml && git commit && npm run cms:local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kieranjrsmith/kieranjrsmith.github.io.git"
+  },
+  "author": "Kieran Smith",
+  "license": "MIT"
+}

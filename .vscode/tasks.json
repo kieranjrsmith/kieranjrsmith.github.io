@@ -8,6 +8,84 @@
 			"group": "build",
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "Decap CMS Server",
+			"type": "shell",
+			"command": "npx decap-server",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "new",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"runOptions": {
+				"instanceLimit": 1
+			}
+		},
+		{
+			"label": "CMS Switch to Local",
+			"type": "shell",
+			"command": "./switch-cms-mode.sh",
+			"args": ["local"],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "CMS Switch to Live", 
+			"type": "shell",
+			"command": "./switch-cms-mode.sh",
+			"args": ["live"],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "CMS Check Status",
+			"type": "shell",
+			"command": "./switch-cms-mode.sh",
+			"args": ["status"],
+			"group": "test",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "Start Local Development",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"CMS Switch to Local"
+			],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			}
 		}
 	]
 }

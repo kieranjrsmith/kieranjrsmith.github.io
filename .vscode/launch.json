@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "� Switch CMS to Local",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/switch-cms-mode.sh",
+            "args": ["local"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "bash"
+        },
+        {
+            "name": "🌐 Switch CMS to Live",
+            "type": "node", 
+            "request": "launch",
+            "program": "${workspaceFolder}/switch-cms-mode.sh",
+            "args": ["live"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "bash"
+        },
+        {
+            "name": "📊 Check CMS Status",
+            "type": "node",
+            "request": "launch", 
+            "program": "${workspaceFolder}/switch-cms-mode.sh",
+            "args": ["status"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "bash"
+        },
+        {
+            "name": "🚀 Start Decap CMS Server",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": ["decap-server"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

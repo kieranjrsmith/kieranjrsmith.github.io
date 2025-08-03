@@ -1,0 +1,26 @@
+[
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.tasks.runTask",
+        "args": "CMS: Switch to Local",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.tasks.runTask", 
+        "args": "CMS: Switch to Live",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.tasks.runTask",
+        "args": "CMS: Check Status",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Start Local Development",
+        "when": "!terminalFocus"
+    }
+]
