@@ -8,19 +8,17 @@
 #
 # ============================================
 
-# PRODUCTION/LIVE VERSION (GitHub Pages) - CURRENTLY ACTIVE
+# PRODUCTION/LIVE VERSION (GitHub Pages) - CURRENTLY COMMENTED OUT
 backend:
   name: github
   repo: kieranjrsmith/kieranjrsmith.github.io
   branch: main
-  auth_type: pkce
-  app_id: decap-cms
 
-# LOCAL DEVELOPMENT VERSION - CURRENTLY COMMENTED OUT
+# LOCAL DEVELOPMENT VERSION - CURRENTLY ACTIVE
 backend:
 #   name: proxy
 #   proxy_url: http://localhost:8081/api/v1
-  branch: main
+  # branch: main
 # 
 # NOTE: For local development, also run: npx decap-server
 
