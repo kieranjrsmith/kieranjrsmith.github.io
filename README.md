@@ -49,13 +49,29 @@ bundle exec jekyll build
 
 ## Editing Content
 
-### Quick Content Changes
+### 🎯 **Easy Web Interface (Recommended)**
+Use the Decap CMS admin interface for user-friendly content editing:
+
+**Local Development:**
+- Visit: `http://localhost:4001/admin/local.html`
+- Edit content through web forms
+- No YAML knowledge required
+
+**Production:**
+- Visit: `https://kieranjrsmith.github.io/admin/`
+- Login with GitHub account
+- Make changes and publish directly
+
+### 📝 **Advanced: Direct File Editing**
+For developers or advanced users:
+
+#### Quick Content Changes
 Edit `_data/content.yml` to change text content without touching HTML/CSS.
 
-### Styling Changes
+#### Styling Changes
 Edit `assets/css/main.scss` for visual modifications.
 
-### Site Configuration
+#### Site Configuration
 Edit `_config.yml` for site-wide settings like title, email, SEO.
 
 ## Deployment
@@ -65,11 +81,14 @@ This site is automatically deployed to GitHub Pages when changes are pushed to t
 ## Features
 
 - ✅ **Clean Structure** - Content separated from code
-- ✅ **Easy Editing** - Change text content in YAML files
+- ✅ **Easy Editing** - Web-based CMS interface with Decap CMS
+- ✅ **No-Code Content Management** - Edit through forms, not files
+- ✅ **Traditional Editing** - Direct YAML file editing for developers
 - ✅ **Responsive Design** - Works on all device sizes
 - ✅ **SEO Optimized** - Meta tags, sitemap, structured data
 - ✅ **Dev Container** - Complete development environment
 - ✅ **Live Reload** - Automatic refresh during development
+- ✅ **Media Management** - Upload and manage images through web interface
 
 ## Contact
 

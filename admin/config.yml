@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "assets/images" # Media files will be stored in the repo under assets/images
+public_folder: "/assets/images" # The src attribute for uploaded media will begin with /assets/images
+
+collections:
+  - name: "config"
+    label: "Site Configuration"
+    files:
+      - name: "site_config"
+        label: "Site Settings"
+        file: "_config.yml"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Site URL", name: "url", widget: "string" }
+          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
+          - { label: "Banner Image", name: "banner_image", widget: "image", required: false }
+          - { label: "Language", name: "lang", widget: "string", default: "en_GB" }
+          - { label: "Timezone", name: "timezone", widget: "string", default: "Europe/London" }
+          - label: "Author"
+            name: "author"
+            widget: "object" 
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+
+  - name: "content"
+    label: "Page Content"
+    files:
+      - name: "site_content"
+        label: "Website Content"
+        file: "_data/content.yml"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "markdown" }
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "markdown" }
+          - label: "Experience"
+            name: "experience"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "markdown" }
+          - label: "Qualifications"
+            name: "qualifications"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Qualification", name: "item", widget: "string" }
+          - label: "Publications"
+            name: "publications"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - label: "Personal Interests"
+            name: "interests"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - label: "How It Works"
+            name: "how_it_works"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Closing", name: "closing", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "homepage"
+        label: "Homepage Settings"
+        file: "index.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "text" }

@@ -7,7 +7,11 @@ This Jekyll site is organized to clearly separate content from code:
 ├── index.html              # Main homepage (content-focused)
 ├── _data/
 │   └── content.yml         # All site text content
-└── assets/images/          # Images and media files
+├── assets/images/          # Images and media files
+└── admin/                  # Decap CMS admin interface
+    ├── index.html          # Production CMS interface
+    ├── local.html          # Development CMS interface  
+    └── config.yml          # CMS configuration
 ```
 
 ## 🛠️ Code & Configuration
@@ -41,7 +45,15 @@ This Jekyll site is organized to clearly separate content from code:
 
 ## How to Edit Content
 
-### ✏️ Text Content
+### 🎯 **NEW: Web-Based Admin Interface**
+Visit `/admin/` on your site to use the Decap CMS interface:
+- **Local Development**: `http://localhost:4001/admin/local.html`
+- **Production**: `https://kieranjrsmith.github.io/admin/` (requires GitHub authentication)
+- Edit content through forms instead of raw YAML
+- Preview changes before publishing
+- Manage images through web interface
+
+### ✏️ Text Content (Traditional Method)
 Edit `_data/content.yml` to change:
 - Introduction text
 - Service descriptions
