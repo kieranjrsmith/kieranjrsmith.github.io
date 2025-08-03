@@ -15,10 +15,10 @@ backend:
   branch: main
 
 # LOCAL DEVELOPMENT VERSION - CURRENTLY ACTIVE
-backend:
+# backend:
 #   name: proxy
 #   proxy_url: http://localhost:8081/api/v1
-  branch: main
+#   branch: main
 # 
 # NOTE: For local development, also run: npx decap-server
 
