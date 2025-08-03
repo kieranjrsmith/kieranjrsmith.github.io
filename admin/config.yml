@@ -13,6 +13,7 @@ backend:
   name: github
   repo: kieranjrsmith/kieranjrsmith.github.io
   branch: main
+  auth_endpoint: api/auth # This enables implicit grant flow
 
 # LOCAL DEVELOPMENT VERSION - CURRENTLY COMMENTED OUT
 # backend:
