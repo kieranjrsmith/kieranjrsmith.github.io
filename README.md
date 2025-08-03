@@ -94,3 +94,4 @@ This site is automatically deployed to GitHub Pages when changes are pushed to t
 
 For tutoring inquiries, please contact:
 📧 KieranJosephRobertSmith@live.co.uk
+Available under the MIT License.
