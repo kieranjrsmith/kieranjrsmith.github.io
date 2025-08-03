@@ -12,7 +12,7 @@
 		{
 			"label": "Decap CMS Server",
 			"type": "shell",
-			"command": "npx decap-server",
+			"command": "${workspaceFolder}/.vscode/start-decap-server.sh",
 			"group": "build",
 			"isBackground": true,
 			"problemMatcher": [],
