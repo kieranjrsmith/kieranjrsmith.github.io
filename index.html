@@ -1,170 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kieran Smith - English Tutor</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+---
+layout: default
+title: "Professional English Tutoring Services"
+description: "Experienced English tutor offering personalized one-to-one tutoring for Nat 5, Higher, Advanced Higher, GCSE and A-Level students in Lanarkshire and online."
+---
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
+{% include banner.html %}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            min-height: 100vh;
-        }
+<div class="intro">
+    <p>{{ site.data.content.intro }}</p>
+</div>
 
-        .banner {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
+{% include text-section.html title=site.data.content.services.title content=site.data.content.services.description %}
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 2.5em;
-        }
+{% include text-section.html title=site.data.content.experience.title content=site.data.content.experience.description %}
 
-        h3 {
-            color: #34495e;
-            margin: 30px 0 15px 0;
-            font-size: 1.4em;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
+{% include list-section.html title=site.data.content.qualifications.title items=site.data.content.qualifications.items %}
 
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+<div class="section">
+    <h2><strong>{{ site.data.content.publications.title }}</strong></h2>
+    <p>{{ site.data.content.publications.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+</div>
 
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
+<div class="section">
+    <h2><strong>{{ site.data.content.interests.title }}</strong></h2>
+    <p>{{ site.data.content.interests.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+</div>
 
-        li {
-            margin-bottom: 8px;
-        }
+{% include list-section.html title=site.data.content.how_it_works.title items=site.data.content.how_it_works.items %}
 
-        em {
-            font-style: italic;
-            color: #555;
-        }
-
-        .contact-email {
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #2980b9;
-            background-color: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 0;
-        }
-
-        .intro {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-
-        .section {
-            margin-bottom: 25px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-                margin: 0;
-                box-shadow: none;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            h3 {
-                font-size: 1.2em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="http://jharis.ddns.net/wp-content/uploads/2025/01/New-banner-1024x256.png" alt="Kieran Smith English Tutor Banner" class="banner">
-        
-        <div class="intro">
-            <p>Throughout my undergraduate studies, I was privileged to be taught by incredible tutors who inspired me to achieve a PhD in English Literature. Their determination to help me succeed shaped my own passion for teaching. I now aim to inspire confidence in my students, helping them to enjoy reading and writing critically while achieving their academic goals.</p>
-        </div>
-
-        <div class="section">
-            <h3><strong>About the Service</strong></h3>
-            <p>I offer personalised one-to-one in-person tutoring for students in North and South Lanarkshire who require additional support for their English Nat 5, Higher, Advanced Higher, GCSE and A-Level exams. For students further afield or those who prefer online learning, I also offer video lessons.</p>
-            <p>My tutoring is tailored to help you overcome specific challenges in English and develop the skills you already possess. I have experience teaching students with special educational needs and am happy to adapt my tutoring to meet individual learning requirements.</p>
-        </div>
-
-        <div class="section">
-            <h3><strong>Experience</strong></h3>
-            <p>I am a highly motivated English tutor with 8 years of experience at CloudLearn, a distance learning provider. In this post, I was responsible for providing individual tutoring to roughly 600 GCSE and A-Level English students each year, creating engaging online lessons, and assisting A-Level students with their coursework components.</p>
-            <p>I also worked as a Graduate Teaching Assistant at the University of Glasgow for 2 semesters, during which I hosted in-person group seminars and graded student contributions.</p>
-        </div>
-
-        <div class="section">
-            <h3><strong>Qualifications</strong></h3>
-            <ul>
-                <li>First Class MA (Hons) in English Literature from the University of Glasgow.</li>
-                <li>MLitt with Distinction in English Literature from the University of Glasgow.</li>
-                <li>PhD in modern and contemporary literature from the University of Glasgow. Submitted, viva pending.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3><strong>Publications</strong></h3>
-            <p>Book reviews published in both the <em>Journal of American Studies</em> and the <em>American Book Review</em>.</p>
-        </div>
-
-        <div class="section">
-            <h3><strong>Personal Interests</strong></h3>
-            <p>When I am not reading or writing, I enjoy running, football, bouldering, cooking, and a wide range of television shows. Some of my favourite books are Sherwood Anderson's <em>Winesburg, Ohio</em>, Jennifer Egan's <em>A Visit from the Good Squad</em>, David Mitchell's <em>Ghostwritten</em>, and Magnus Mills's <em>The Scheme for Full Employment</em>.</p>
-        </div>
-
-        <div class="section">
-            <h3><strong>How It Works</strong></h3>
-            <ul>
-                <li>Available Monday to Friday, 3pm to 9pm. Lessons are typically one hour long, but I am happy to accommodate students who require longer lessons for any reason.</li>
-                <li>Book a free consultation to discuss your goals and create a personalized learning plan.</li>
-                <li>Lessons are £30/hr.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3><strong>Contact Details</strong></h3>
-            <p>If you would like to book a lesson, please feel free to contact me by email:</p>
-            <div class="contact-email">📧 KieranJosephRobertSmith@live.co.uk</div>
-            <p>I look forward to working with you.</p>
-        </div>
-    </div>
-</body>
-</html>
+<div class="section">
+    <h2><strong>{{ site.data.content.contact.title }}</strong></h2>
+    <p>{{ site.data.content.contact.description }}</p>
+    <div class="contact-email">📧 {{ site.email }}</div>
+    <p>{{ site.data.content.contact.closing }}</p>
+</div>

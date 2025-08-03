@@ -1,0 +1,46 @@
+# Site Content Data
+# This file contains all the text content for the tutoring website
+
+intro: |
+  Throughout my undergraduate studies, I was privileged to be taught by incredible tutors who inspired me to achieve a PhD in English Literature. Their determination to help me succeed shaped my own passion for teaching. I now aim to inspire confidence in my students, helping them to enjoy reading and writing critically while achieving their academic goals.
+
+services:
+  title: "About the Service"
+  description: |
+    I offer personalised one-to-one in-person tutoring for students in North and South Lanarkshire who require additional support for their English Nat 5, Higher, Advanced Higher, GCSE and A-Level exams. For students further afield or those who prefer online learning, I also offer video lessons.
+    
+    My tutoring is tailored to help you overcome specific challenges in English and develop the skills you already possess. I have experience teaching students with special educational needs and am happy to adapt my tutoring to meet individual learning requirements.
+
+experience:
+  title: "Experience"
+  description: |
+    I am a highly motivated English tutor with 8 years of experience at CloudLearn, a distance learning provider. In this post, I was responsible for providing individual tutoring to roughly 600 GCSE and A-Level English students each year, creating engaging online lessons, and assisting A-Level students with their coursework components.
+    
+    I also worked as a Graduate Teaching Assistant at the University of Glasgow for 2 semesters, during which I hosted in-person group seminars and graded student contributions.
+
+qualifications:
+  title: "Qualifications"
+  items:
+    - "First Class MA (Hons) in English Literature from the University of Glasgow."
+    - "MLitt with Distinction in English Literature from the University of Glasgow."
+    - "PhD in modern and contemporary literature from the University of Glasgow. Submitted, viva pending."
+
+publications:
+  title: "Publications"
+  description: "Book reviews published in both the Journal of American Studies and the American Book Review."
+
+interests:
+  title: "Personal Interests"
+  description: "When I am not reading or writing, I enjoy running, football, bouldering, cooking, and a wide range of television shows. Some of my favourite books are Sherwood Anderson's Winesburg, Ohio, Jennifer Egan's A Visit from the Good Squad, David Mitchell's Ghostwritten, and Magnus Mills's The Scheme for Full Employment."
+
+how_it_works:
+  title: "How It Works"
+  items:
+    - "Available Monday to Friday, 3pm to 9pm. Lessons are typically one hour long, but I am happy to accommodate students who require longer lessons for any reason."
+    - "Book a free consultation to discuss your goals and create a personalized learning plan."
+    - "Lessons are £30/hr."
+
+contact:
+  title: "Contact Details"
+  description: "If you would like to book a lesson, please feel free to contact me by email:"
+  closing: "I look forward to working with you."

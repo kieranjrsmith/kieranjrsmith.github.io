@@ -1,0 +1,11 @@
+<section class="section">
+    <h2><strong>{{ include.title }}</strong></h2>
+    {% assign paragraphs = include.content | split: '
+
+' %}
+    {% for paragraph in paragraphs %}
+        {% if paragraph != blank %}
+            <p>{{ paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endif %}
+    {% endfor %}
+</section>

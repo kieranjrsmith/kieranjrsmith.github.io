@@ -1,0 +1,52 @@
+title: Kieran Smith - English Tutor
+email: KieranJosephRobertSmith@live.co.uk
+description: >-
+  Professional English tutoring services for students in North and South Lanarkshire.
+  Specializing in Nat 5, Higher, Advanced Higher, GCSE and A-Level English exams.
+baseurl: ""
+url: "https://kieranjrsmith.github.io"
+
+# Content settings
+banner_image: "http://jharis.ddns.net/wp-content/uploads/2025/01/New-banner-1024x256.png"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - old_data/
+  - .devcontainer/
+  - README.md
+  - STRUCTURE.md
+  - LICENSE
+
+# Site author
+author:
+  name: Kieran Smith
+  email: KieranJosephRobertSmith@live.co.uk
+
+# Social links (optional)
+# github_username: kieranjrsmith
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+
+# SEO settings
+lang: en_GB
+timezone: Europe/London
