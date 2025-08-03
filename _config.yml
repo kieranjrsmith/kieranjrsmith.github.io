@@ -7,7 +7,7 @@ baseurl: ""
 url: "https://kieranjrsmith.github.io"
 
 # Content settings
-banner_image: "/assets/images/old_banner.png"
+banner_image: "/assets/images/new_banner.png"
 
 # Build settings
 markdown: kramdown
