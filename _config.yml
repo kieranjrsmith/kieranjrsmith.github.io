@@ -7,7 +7,7 @@ baseurl: ""
 url: "https://kieranjrsmith.github.io"
 
 # Content settings
-banner_image: "http://jharis.ddns.net/wp-content/uploads/2025/01/New-banner-1024x256.png"
+banner_image: "/assets/images/old_banner.png"
 
 # Build settings
 markdown: kramdown
