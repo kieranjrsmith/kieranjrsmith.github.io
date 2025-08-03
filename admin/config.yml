@@ -1,4 +1,16 @@
-# ============================================
+# ========# PRODUCTION/LIVE VERSION (GitHub Pages) - CURRENTLY ACTIVE
+backend:
+  name: github
+  repo: kieranjrsmith/kieranjrsmith.github.io
+  branch: main
+
+# LOCAL DEVELOPMENT VERSION - CURRENTLY COMMENTED OUT
+# backend:
+#   name: proxy
+#   proxy_url: http://localhost:8081/api/v1
+#   branch: main
+# 
+# NOTE: For local development, also run: npx decap-server=======================
 # DECAP CMS CONFIGURATION
 # ============================================
 # 
@@ -15,7 +27,7 @@ backend:
   branch: main
 
 # LOCAL DEVELOPMENT VERSION - CURRENTLY ACTIVE
-backend:
+# backend:
 #   name: proxy
 #   proxy_url: http://localhost:8081/api/v1
   # branch: main
