@@ -13,8 +13,8 @@ backend:
   name: github
   repo: kieranjrsmith/kieranjrsmith.github.io
   branch: main
-  auth_endpoint: api/auth # This enables implicit grant flow
-  client_id: Ov23liMpWvt8DazokuAB # Your GitHub OAuth client ID here
+  base_url: https://api.netlify.com # Use Netlify's authentication service
+  auth_endpoint: auth # This will use Netlify's auth endpoint
 
 # LOCAL DEVELOPMENT VERSION - CURRENTLY COMMENTED OUT
 # backend:
